@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">Mi Portafolio</h1>
+        <nav class="nav">
+          <a href="#home">Inicio</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#studies">Estudios</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner glass">
+          <div class="hero-left">
+            <h2 class="hero-title">Hola, soy <span class="accent">Ezequiel Cano</span></h2>
+            <p class="hero-sub">Desarrollador de Software</p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#projects">Ver proyectos</a>
+              <a class="btn ghost" href="#contact">Contactar</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="avatar glass small"> <!-- avatar image: place your file at assets/avatar.jpg -->
+              <img src="assets/avatar.jpg" alt="Ezequiel Cano" class="avatar-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container glass section-inner">
+          <div class="about-grid">
+            <div class="about-left">
+              <h3>Sobre mí</h3>
+              <div class="about-text">
+                <p>Técnico en Desarrollo de Software con formación en programación y desarrollo web Manejo de Python, HTML y CSS, con capacidad de aprendizaje rápido, compromiso y orientación a resultados. </p>
+                <p>Busco integrarme a un equipo de trabajo donde pueda desarrollarme y aportar soluciones tecnológicas.</p>
+              </div>
+            </div>
+            <div class="skills">
+              <h4>Skills</h4>
+              <div class="skill-list">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h3>Proyectos</h3>
+          <div class="projects-grid">
+            <article class="project-card glass">
+              <div class="project-media">
+                <img src="assets/projects/direccion-turismo.jpg" alt="Captura Direccion de Turismo" class="project-img" loading="lazy">
+              </div>
+              <div class="project-body">
+                <h4>Direccion de Turismo</h4>
+                <p>Sistema de Gestión de Turismo desarrollado con Python, HTML y CSS versionando el codigo mediante GitHub</p>
+                <div class="project-links">
+                  <a href="#" class="link">Demo</a>
+                  <a href="#" class="link">Repo</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <div class="project-media">
+                <img src="assets/projects/portafolio.jpg" alt="Captura Portafolio" class="project-img" loading="lazy">
+              </div>
+              <div class="project-body">
+                <h4>Portafolio</h4>
+                <p>Portafolio Personal con Contacto</p>
+                <div class="project-links">
+                  <a href="#" class="link">Demo</a>
+                  <a href="#" class="link">Repo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="studies" class="section">
+        <div class="container glass section-inner">
+          <h3>Estudios</h3>
+          <ul class="timeline">
+            <li>
+              <strong>EETP № 455 “Gral. Don José de San Martín”</strong>
+              <span class="muted">Educación Secundaria "Técnico Químico" —  2017 - 2022</span>
+            </li>
+            <li>
+              <strong>Fundación Instituto Tecnológico "El Molino"</strong>
+              <span class="muted">Tecnicatura en Desarrollo de Software — 2022 - 2025</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container glass section-inner">
+          <h3>Contacto</h3>
+          <form id="contactForm" class="contact-form">
+            <label>Nombre <input name="name" required></label>
+            <label>Email <input name="email" type="email" required></label>
+            <label>Mensaje <textarea name="message" rows="4" required></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar</button>
+            </div>
+            <div id="formMsg" class="form-msg" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+        <div class="credits">© <span id="year"></span> TuNombre. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
