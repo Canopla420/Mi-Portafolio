@@ -32,6 +32,10 @@ Siguientes pasos recomendados:
 - Añadir imágenes de proyectos en las tarjetas (`.project-media`).
 	- Coloca las imágenes de proyectos en `assets/projects/` con nombres como `direccion-turismo.jpg` o `portafolio.jpg`.
 	- Recomendado: tamaño aproximado 1200x700 px (puedes optimizar a WebP). Usa `loading="lazy"` en `<img>` para mejorar rendimiento.
+	 - Añadir tu CV en PDF para descarga:
+	 	- Coloca tu archivo PDF en `assets/CV_Ezequiel_Cano.pdf`.
+	 	- El sitio mostrará un botón "Descargar mi CV (PDF)" en la sección "Sobre mí". Puedes cambiar el nombre del archivo, pero actualiza el `href` en `index.html` si lo haces.
+	 	- Recomendado: tamaño del PDF < 1 MB para una mejor experiencia.
 - Conectar el formulario a un servicio (Formspree, Netlify Forms o un endpoint propio).
 	- Cómo configurar el formulario de contacto:
 		1. Formspree (fácil, gratis para usos básicos):

@@ -40,6 +40,9 @@ html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helv
 .about-grid > .skills{align-self:start}
 .skills .chip{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;margin:6px 6px 6px 0;color:var(--muted)}
 
+.cv-download{margin-top:18px;display:flex;gap:12px}
+.cv-download .btn{padding:10px 16px}
+
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .project-card{overflow:hidden}
 .project-media{height:140px;background:linear-gradient(90deg,#07101a,rgba(11,13,18,0));border-bottom:1px solid rgba(255,255,255,0.03);overflow:hidden}
